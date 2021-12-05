@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NASAapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDa-us-nKS">
+                                <rect key="frame" x="56" y="543" width="303" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.19604594649447382" green="0.17882580181491567" blue="0.77681107954545459" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A PICTURE FROM THE SPACE 🔭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8b-Ae-aEN">
+                                <rect key="frame" x="65" y="84" width="284" height="23"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" red="0.69844031679999996" green="0.72854366169999996" blue="0.94333755969999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Uxs-uy-Q20">
+                                <rect key="frame" x="47" y="810" width="320" height="60"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <connections>
+                                    <action selector="datePickerHandler:" destination="BYZ-38-t0r" eventType="valueChanged" id="f5t-uy-Agx"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pic a date :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKb-qf-K4Y">
+                                <rect key="frame" x="156" y="781" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" red="0.66598590329999996" green="0.68569780739999997" blue="0.94653566919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eGX-gA-OAX">
+                                <rect key="frame" x="55" y="134" width="304" height="401"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="401" id="00B-dk-4VL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1800137446" green="0.1642018251" blue="0.71328519570000004" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gDa-us-nKS" firstAttribute="top" secondItem="eGX-gA-OAX" secondAttribute="bottom" constant="8" symbolic="YES" id="3h8-Lu-8Jp"/>
+                            <constraint firstItem="gDa-us-nKS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="7uw-jP-ezw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gDa-us-nKS" secondAttribute="trailing" constant="55" id="8jR-kN-D0I"/>
+                            <constraint firstItem="eGX-gA-OAX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="AkS-A9-7Ah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d8b-Ae-aEN" secondAttribute="trailing" constant="65" id="NXY-O7-R3S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eGX-gA-OAX" secondAttribute="trailing" constant="55" id="QjX-ZA-tWr"/>
+                            <constraint firstItem="Uxs-uy-Q20" firstAttribute="top" secondItem="CKb-qf-K4Y" secondAttribute="bottom" constant="8" symbolic="YES" id="UGS-76-ckW"/>
+                            <constraint firstItem="Uxs-uy-Q20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WQX-LD-Vk7"/>
+                            <constraint firstAttribute="bottom" secondItem="CKb-qf-K4Y" secondAttribute="bottom" constant="94" id="WTm-Xd-j9h"/>
+                            <constraint firstItem="d8b-Ae-aEN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="bdP-y8-q9N"/>
+                            <constraint firstItem="eGX-gA-OAX" firstAttribute="centerX" secondItem="CKb-qf-K4Y" secondAttribute="centerX" id="dvI-XX-Gcp"/>
+                            <constraint firstItem="CKb-qf-K4Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="jaO-aI-6Oi"/>
+                            <constraint firstItem="d8b-Ae-aEN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="oaa-vq-PWP"/>
+                            <constraint firstAttribute="bottom" secondItem="Uxs-uy-Q20" secondAttribute="bottom" constant="26" id="vSD-6o-gqg"/>
+                            <constraint firstItem="eGX-gA-OAX" firstAttribute="top" secondItem="d8b-Ae-aEN" secondAttribute="bottom" constant="27" id="zvx-MB-Zh7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Uxs-uy-Q20" id="hHU-Ka-VT1"/>
+                        <outlet property="imageLable" destination="gDa-us-nKS" id="U33-gZ-FCy"/>
+                        <outlet property="img" destination="eGX-gA-OAX" id="80v-xh-ZaT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265.21739130434787" y="8.7053571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
