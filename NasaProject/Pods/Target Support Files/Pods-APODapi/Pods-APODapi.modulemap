@@ -1,0 +1,6 @@
+framework module Pods_APODapi {
+  umbrella header "Pods-APODapi-umbrella.h"
+
+  export *
+  module * { export * }
+}

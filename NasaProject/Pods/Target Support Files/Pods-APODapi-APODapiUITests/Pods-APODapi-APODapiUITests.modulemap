@@ -1,0 +1,6 @@
+framework module Pods_APODapi_APODapiUITests {
+  umbrella header "Pods-APODapi-APODapiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
