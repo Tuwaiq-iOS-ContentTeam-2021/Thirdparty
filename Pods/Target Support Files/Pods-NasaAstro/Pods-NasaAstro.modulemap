@@ -1,0 +1,6 @@
+framework module Pods_NasaAstro {
+  umbrella header "Pods-NasaAstro-umbrella.h"
+
+  export *
+  module * { export * }
+}
