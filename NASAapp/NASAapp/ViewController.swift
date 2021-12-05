@@ -20,8 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let datee = Date()
-        datePicker.maximumDate = Date?(datee)
+        datePicker.maximumDate = Date()
         datePickerHandler((Any).self)
         datePicker.layer.cornerRadius = 20
         
