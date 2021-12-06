@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NasaApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صورة من الفضاء" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j6-X6-ZyU">
+                                <rect key="frame" x="134" y="76.5" width="146" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.3294117647" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حدد التاريخ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toK-6y-HiN">
+                                <rect key="frame" x="296" y="145.5" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BB-O3-qhj">
+                                <rect key="frame" x="20" y="205" width="374" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ae0-ob-XxA">
+                                <rect key="frame" x="0.0" y="285" width="414" height="611"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="611" id="Pvn-4v-aCc"/>
+                                </constraints>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-sy-iMU">
+                                <rect key="frame" x="28" y="127" width="238" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="6KO-bu-knm"/>
+                                    <constraint firstAttribute="width" constant="238" id="d5Z-Gg-742"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="qNn-6a-AcN"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gjf-sy-iMU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="127" id="22W-2v-jZp"/>
+                            <constraint firstItem="gjf-sy-iMU" firstAttribute="top" secondItem="6j6-X6-ZyU" secondAttribute="bottom" constant="24" id="3Ok-78-9KQ"/>
+                            <constraint firstItem="toK-6y-HiN" firstAttribute="leading" secondItem="gjf-sy-iMU" secondAttribute="trailing" constant="30" id="6Fh-Xn-BbD"/>
+                            <constraint firstItem="8BB-O3-qhj" firstAttribute="top" secondItem="gjf-sy-iMU" secondAttribute="bottom" constant="20" id="8Ld-df-O44"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ae0-ob-XxA" secondAttribute="bottom" constant="-34" id="I74-2c-muQ"/>
+                            <constraint firstItem="8BB-O3-qhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KSs-x0-t6P"/>
+                            <constraint firstItem="Ae0-ob-XxA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LUp-QB-tfy"/>
+                            <constraint firstItem="Ae0-ob-XxA" firstAttribute="top" secondItem="8BB-O3-qhj" secondAttribute="bottom" constant="8" id="MYI-If-CFV"/>
+                            <constraint firstItem="Ae0-ob-XxA" firstAttribute="centerX" secondItem="6j6-X6-ZyU" secondAttribute="centerX" id="Nli-ss-FgB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8BB-O3-qhj" secondAttribute="trailing" constant="20" id="Vdb-Uj-Jhp"/>
+                            <constraint firstItem="Ae0-ob-XxA" firstAttribute="centerX" secondItem="8BB-O3-qhj" secondAttribute="centerX" id="XrP-5H-lqH"/>
+                            <constraint firstItem="gjf-sy-iMU" firstAttribute="centerY" secondItem="toK-6y-HiN" secondAttribute="centerY" id="eSb-Ig-IFW"/>
+                            <constraint firstItem="gjf-sy-iMU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="kxv-Qi-iHu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="toK-6y-HiN" secondAttribute="trailing" symbolic="YES" id="q5h-IS-b6c"/>
+                            <constraint firstItem="Ae0-ob-XxA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vk6-C1-4du"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="gjf-sy-iMU" id="xSV-dK-Qiu"/>
+                        <outlet property="imageName" destination="8BB-O3-qhj" id="2c8-On-4rp"/>
+                        <outlet property="nasaImage" destination="Ae0-ob-XxA" id="bHA-ng-2zN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
