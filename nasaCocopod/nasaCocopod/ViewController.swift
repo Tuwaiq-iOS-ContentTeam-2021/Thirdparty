@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleImageLable: UILabel!
     @IBOutlet weak var imageNasa: UIImageView!
     
-    let apiURL = "https://api.nasa.gov"
-    let apiKey = "46QBAmswJA5ThxhHx4m8nHW1NDhkDtQMitgsKPpn"
+    let apiURL = "https://api.nasa.gov/planetary/apod?api_key="
+    let apiKey = "Va1evJcnVRgJWLeRPIedITV9GZ9ZdUUqOXBAUBWI"
     override func viewDidLoad() {
         super.viewDidLoad()
         dataPicker.maximumDate = Date()
@@ -29,7 +29,8 @@ class ViewController: UIViewController {
     }
     func requestImage(date: String){
         let parameter :[String:String] = ["date": date]
-        AF.request(apiURL + apiKey, method: .get, parameters: parameter).responseJSON { response in
+        AF.request(apiURL + apiKey, method: .get, parameters: parameter).responseJSON {
+            response in
             
             switch response.result{
             case.success(let value):
