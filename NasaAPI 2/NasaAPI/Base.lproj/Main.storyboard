@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NasaAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="E5M-hA-SJE">
+                                <rect key="frame" x="30" y="202" width="294" height="216"/>
+                                <color key="backgroundColor" red="0.19471333660000001" green="0.30530001490000003" blue="0.40013415400000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="datePickerHandler:" destination="BYZ-38-t0r" eventType="valueChanged" id="pyG-P8-VOl"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx1-QQ-vJv">
+                                <rect key="frame" x="40" y="428" width="334" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spaceship-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Y3E-EM-ve1">
+                                <rect key="frame" x="74" y="59" width="266" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="XgD-nN-8zr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jbf-N3-SnD">
+                                <rect key="frame" x="40" y="456.5" width="334" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="GqH-yA-6LL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.76811082501654671" green="0.8185807159677998" blue="0.83066998110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E5M-hA-SJE" secondAttribute="trailing" constant="90" id="20N-sf-wLA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y3E-EM-ve1" secondAttribute="trailing" constant="74" id="6wR-nF-jVd"/>
+                            <constraint firstItem="E5M-hA-SJE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8Ct-5H-L06"/>
+                            <constraint firstItem="kx1-QQ-vJv" firstAttribute="top" secondItem="E5M-hA-SJE" secondAttribute="bottom" constant="10" id="8nm-7h-7dJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jbf-N3-SnD" secondAttribute="trailing" constant="40" id="Es4-fa-uks"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kx1-QQ-vJv" secondAttribute="trailing" constant="40" id="GHk-kH-GR7"/>
+                            <constraint firstItem="Y3E-EM-ve1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="UN7-an-TjA"/>
+                            <constraint firstItem="E5M-hA-SJE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="158" id="Zya-Td-x1f"/>
+                            <constraint firstItem="Y3E-EM-ve1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="c4p-Dx-IAU"/>
+                            <constraint firstItem="jbf-N3-SnD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="cIr-JX-Ua3"/>
+                            <constraint firstItem="kx1-QQ-vJv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="coA-xP-e42"/>
+                            <constraint firstItem="jbf-N3-SnD" firstAttribute="top" secondItem="kx1-QQ-vJv" secondAttribute="bottom" constant="8" symbolic="YES" id="fG0-dn-dXg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="E5M-hA-SJE" id="Hj5-Gd-3lM"/>
+                        <outlet property="imageTitleLabel" destination="kx1-QQ-vJv" id="Zns-9e-DCD"/>
+                        <outlet property="imageView" destination="jbf-N3-SnD" id="0Y8-9X-b93"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="32.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Spaceship-removebg-preview" width="577" height="433"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
