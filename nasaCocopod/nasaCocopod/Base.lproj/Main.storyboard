@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nasaCocopod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NASA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grl-Fw-Gme">
+                                <rect key="frame" x="95" y="54" width="224" height="33.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33.5" id="21V-cX-Fas"/>
+                                    <constraint firstAttribute="width" constant="224" id="hZ4-Uh-CEN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sl-mw-cOT">
+                                <rect key="frame" x="0.0" y="163.5" width="187" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="4hd-Ed-e8F"/>
+                                    <constraint firstAttribute="height" constant="54" id="zTx-eW-qVa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1vB-u3-FX2">
+                                <rect key="frame" x="0.0" y="246" width="414" height="540"/>
+                            </imageView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="k7p-d1-dn6">
+                                <rect key="frame" x="220" y="171" width="186" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Bug-14-qs3"/>
+                                    <constraint firstAttribute="width" constant="186" id="GOV-oB-oQv"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="dataPickerHandler:" destination="BYZ-38-t0r" eventType="valueChanged" id="D3m-yg-zhK"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Sl-mw-cOT" firstAttribute="top" secondItem="Grl-Fw-Gme" secondAttribute="bottom" constant="76" id="Bnf-Ea-XmT"/>
+                            <constraint firstItem="Grl-Fw-Gme" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="Bt6-ZL-DFr"/>
+                            <constraint firstItem="k7p-d1-dn6" firstAttribute="leading" secondItem="2Sl-mw-cOT" secondAttribute="trailing" constant="33" id="DK0-Pb-c2h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Grl-Fw-Gme" secondAttribute="trailing" constant="95" id="Hxy-V7-Bq0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1vB-u3-FX2" secondAttribute="bottom" constant="76" id="QJf-Ud-dlI"/>
+                            <constraint firstItem="k7p-d1-dn6" firstAttribute="leading" secondItem="2Sl-mw-cOT" secondAttribute="trailing" constant="33" id="ZRA-MQ-ZEt"/>
+                            <constraint firstItem="1vB-u3-FX2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aCf-rq-ilV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k7p-d1-dn6" secondAttribute="trailing" constant="8" id="f1r-uE-ZI8"/>
+                            <constraint firstItem="k7p-d1-dn6" firstAttribute="top" secondItem="Grl-Fw-Gme" secondAttribute="bottom" constant="83.5" id="feu-El-f9L"/>
+                            <constraint firstItem="Grl-Fw-Gme" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="h7q-Th-dKV"/>
+                            <constraint firstItem="1vB-u3-FX2" firstAttribute="top" secondItem="k7p-d1-dn6" secondAttribute="bottom" constant="28" id="hoA-eW-vng"/>
+                            <constraint firstItem="2Sl-mw-cOT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iFc-57-85b"/>
+                            <constraint firstItem="1vB-u3-FX2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mC7-u0-teq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataPicker" destination="k7p-d1-dn6" id="L89-2S-r88"/>
+                        <outlet property="imageNasa" destination="1vB-u3-FX2" id="nyV-d0-7GT"/>
+                        <outlet property="titleImageLable" destination="2Sl-mw-cOT" id="vwQ-km-jOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
