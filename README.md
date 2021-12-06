@@ -1,5 +1,5 @@
 # Thirdparty
-this is the first time for me to use api
+This is the first time for me to use API
 
 <h1>Screenshot</h1>
 
