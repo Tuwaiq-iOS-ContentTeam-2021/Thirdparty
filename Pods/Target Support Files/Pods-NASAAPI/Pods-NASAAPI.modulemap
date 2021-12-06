@@ -1,0 +1,6 @@
+framework module Pods_NASAAPI {
+  umbrella header "Pods-NASAAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
