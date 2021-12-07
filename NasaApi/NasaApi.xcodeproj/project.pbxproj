@@ -91,7 +91,6 @@
 				FACF4B1B14E9FF2ACF3CCF0C /* Pods-NasaApi.debug.xcconfig */,
 				88E1B8512BA4EF16C00ECC47 /* Pods-NasaApi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func datePickerAction(_ sender: Any) {
         let dateFormatter = DateFormatter()
+        
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let selectedDate = dateFormatter.string(from: datePicker.date)
         requestImage(date: selectedDate)
